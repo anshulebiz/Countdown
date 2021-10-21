@@ -1,10 +1,3 @@
-//
-//  DataInfo.swift
-//  timerDemo
-//
-//  Created by HariKrishna Kundariya on 19/10/21.
-//
-
 import UIKit
 import CoreData
 

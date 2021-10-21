@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
 }
 
 //MARK: Button Actions
-extension ViewController {
+extension HomeViewController {
     @IBAction func btnPressAction(_ sender: Any) {
         self.lblDays.text = "00"
         self.lblHours.text = "00"
@@ -37,13 +37,13 @@ extension ViewController {
     }
     
     @IBAction func btnLogAction(_ sender: Any) {
-        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogVC") as! LogVC
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogViewController") as! LogViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 //MARK: Methods
-extension ViewController {
+extension HomeViewController {
     
     //for display starting timer
     func startingTimer() {

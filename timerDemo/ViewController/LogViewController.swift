@@ -1,6 +1,6 @@
 import UIKit
 
-class LogVC: UIViewController {
+class LogViewController: UIViewController {
 
     var logList = [LogStore]()
     
@@ -16,14 +16,14 @@ class LogVC: UIViewController {
 }
 
 //MARK: Button Actions
-extension LogVC {
+extension LogViewController {
     @IBAction func btnBackAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
 }
 
 //MARK: TableView Methods
-extension LogVC: UITableViewDelegate, UITableViewDataSource {
+extension LogViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return logList.count
     }

@@ -1,23 +1,17 @@
-//
-//  LogDetailCell.swift
-//  timerDemo
-//
-//  Created by HariKrishna Kundariya on 19/10/21.
-//
-
 import UIKit
 
 class LogDetailCell: UITableViewCell {
 
+    @IBOutlet weak var lblStartDate: UILabel!
+    @IBOutlet weak var lblEndDate: UILabel!
+    @IBOutlet weak var lblDifference: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }
